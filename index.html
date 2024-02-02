@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+   @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap');
+ 
+    body{
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      font-family: 'Libre Franklin', sans-serif;
+
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 38px;
+      width: 100%; 
+    }
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    h1{
+      font-size: 22px;
+      text-align: center;
+       color: #969696;
+    }
+    input {
+     border-radius: 16px;
+      margin-top: 8px;
+      background: transparent;
+      width: 281px;
+      height: 40px;
+      border: 1px solid #B8C7ED;
+    }
+
+    input::placeholder {
+      color: #C2D3FF;
+      padding: 8px;
+    }
+    .btn{
+      border-radius: 16px;
+       margin-top: 8px;
+      width: 281px;
+      height: 40px;
+      border: none;
+      background: #4C7BF3;
+      color: #fff;
+      margin-bottom: 72px;
+      box-shadow: 1px 2px 8px #4C7BF3;
+    }
+
+    .pt-32 {
+      margin-top: 32px;
+    }
+
+    .pt-15 {
+      margin-top: 15px;
+    }
+
+    
+
+    .dashboard{
+      width: 320px;
+      height: 192px;
+    }
+
+    span{
+      color: #15202A;
+    }
+
+    .fa{
+     border: 1px solid #4C7BF3;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+      padding: 8px;
+     gap: 8px;
+     color: #4C7BF3;
+     margin: 20px 0;
+    }
+
+    .subscription {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media screen and (min-width:500px) {
+        h1{
+          font-size: 60px;
+        }
+        p{
+          font-size: 20px;
+        }
+
+        .subscription {
+          flex-direction: row;
+          gap: 16px;
+        }
+
+        .btn {
+          width: 200px;
+          height: 56px;
+          margin-top: 30px;
+          margin-bottom: 0;
+          border-radius: 24px;
+        }
+
+         .dashboard {
+          width: 640px;
+          height: 383px;
+          margin-top: 94px;
+        }
+
+        input {
+          width: 421px;
+          height: 56px;
+        }
+
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <img src="images/logo.svg" alt="">
+    <h1 class="pt-32">We are launching <span>soon!</span></h1>
+    <p class="pt-32">Subscribe and get notified</p>
+    <div class="subscription">
+ <input type="text" class="input-field-1 pt-32 " placeholder="Your email address...">
+    <button class="btn">Notify Me</button>
+
+    </div>
+       <img src="images/illustration-dashboard.png" class="dashboard" alt="">
+    <div class="social-icons">
+       <i class="fa fa-facebook" aria-hidden="true"></i>
+       <i class="fa fa-twitter" aria-hidden="true"></i>
+       <i class="fa fa-instagram" aria-hidden="true"></i>
+    </div>
+    <p>© Copyright Ping. All rights reserved.</p>
+  </div>
+<script src="https://kit.fontawesome.com/84e8532b49.js" crossorigin="anonymous"></script>
+  
+</body>
+</html>
